@@ -8,7 +8,8 @@
 </p>
 <div class="section-example-container">
 
-<pre class="python">def get_history(self,symbol, num):
+<pre class="python">
+def get_history(self,symbol, num):
     data = {}
     dates = []
     history = self.History([symbol], num, Resolution.Daily).loc[symbol]['close'] #request the historical data for a single symbol
